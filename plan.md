@@ -47,6 +47,7 @@ store image locally using sql lite
 *click or argparse*
     
     probably stick with argparse
+    flask uses click
 
 Sample link
 
