@@ -69,3 +69,6 @@ raw image
 Flask Uploads for file upload and progressbar ?
 
 https://pythonhosted.org/Flask-Uploads/
+
+[Handling file uploads with flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask)
+
