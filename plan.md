@@ -11,8 +11,6 @@
 
 return a response image has uploaded ?
 
-*[optional]*
-
 `/web/upload/`
 
     a web page with upload button
@@ -28,7 +26,6 @@ return a response image has uploaded ?
     Small, Medium, Large and Original
 
 ## Viewing the images
-[optional]
 
 `/web/list/n/`
 
@@ -47,3 +44,4 @@ store image locally using sql lite
 /get/image-id  -- fetch_image --> return image
 
 
+*click or argparse*
