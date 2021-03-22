@@ -38,3 +38,12 @@ return a response image has uploaded ?
 ## Storing the images
 
 store image locally using sql lite
+
+
+## Flow
+
+/upload/ + image  --> store_db --> return OK Response
+
+/get/image-id  -- fetch_image --> return image
+
+
