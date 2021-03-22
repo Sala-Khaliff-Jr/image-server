@@ -34,7 +34,12 @@ return a response image has uploaded ?
 
 ## Storing the images
 
-store image locally using sql lite
+[Uploading Files](https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/#uploading-files)
+
+`flask.save('/path/to/save')`
+save files in the server directly
+
+store image locally using sql lite -- probably not needed ?
 
 
 ## Flow

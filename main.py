@@ -1,6 +1,9 @@
 from flask import Flask
-app = Flask(__name__)
+import os 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World'
+CURENT_FOLDER = os.getcwd()
+UPLOAD_FOLDER = CURENT_FOLDER+'images'
+ALLOWED_EXTENSIONS = {'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
