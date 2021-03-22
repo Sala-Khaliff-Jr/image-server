@@ -59,3 +59,8 @@ http://images.amazon.com/images/P/0971633894.01._PT-90_PE10_PT-90_PE20_PT-90_PE3
 
 raw image
     http://images.amazon.com/images/P/0971633894.01.jpg
+
+
+Flask Uploads for file upload and progressbar ?
+
+https://pythonhosted.org/Flask-Uploads/
