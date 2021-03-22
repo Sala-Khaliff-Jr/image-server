@@ -45,3 +45,16 @@ store image locally using sql lite
 
 
 *click or argparse*
+    
+    probably stick with argparse
+
+Sample link
+
+http://aaugh.com/imageabuse.html
+
+Amazon Cover Image example  
+
+http://images.amazon.com/images/P/0971633894.01._PT-90_PE10_PT-90_PE20_PT-90_PE30_PT-90_PE40_.jpg
+
+raw image
+    http://images.amazon.com/images/P/0971633894.01.jpg
