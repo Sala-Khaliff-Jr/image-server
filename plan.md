@@ -3,6 +3,17 @@
 
 *similar to google drive*
 
+## *TODO*: 
+*ADD USER UPLOADS*
+
+*METADATA FILE TO STORE USERNAME AND IMAGE UPLOADED*
+
+*USER AUTHNTICATION --?*
+
+*BETTER HTML DESIGN*
+
+
+
 ## Uploading an image
 
 `/post/image`
@@ -34,6 +45,7 @@ return a response image has uploaded ?
 
 ## Storing the images
 
+## Locally 
 [Uploading Files](https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/#uploading-files)
 
 `flask.save('/path/to/save')`
@@ -41,6 +53,9 @@ save files in the server directly
 
 store image locally using sql lite -- probably not needed ?
 
+## Cloud
+
+Store the image in s3 bucket and fetch the image from there.
 
 ## Flow
 
@@ -49,6 +64,7 @@ store image locally using sql lite -- probably not needed ?
 /get/image-id  -- fetch_image --> return image
 
 
+*not needed*
 *click or argparse*
     
     probably stick with argparse
@@ -72,3 +88,10 @@ https://pythonhosted.org/Flask-Uploads/
 
 [Handling file uploads with flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask)
 
+
+svinx package for documentation 
+minio - s3 interface
+environment variable for image path
+store images in s3
+
+metadata file to assign username to the image uploaded
