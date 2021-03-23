@@ -12,19 +12,58 @@
 
 *BETTER HTML DESIGN*
 
+## Main Pages
+
+`/`
+
+    Redirects to /login if not logged in
+    else redirects to /user/list/5 - to display 5 recently uploaded images
+
+`/login`
+
+    Allows user to login if username and password is correct
+
+`/signup`
+
+    Allows users to create new user
+
+--- 
+
 ## Uploading an image
 
-`/post/image`
-
-    upload from command line with image_name as argument ?
-
-return a response image has uploaded ?
-
-`/web/upload/`
+`/<user>/upload/`
 
     a web page with upload button
 
-## Downloading an image
+--- 
+
+## Viewing the images
+
+`/<user>/list/n/`
+
+    diplay last n images uploaded with thumbnails
+        if no images are available display message to upload
+
+    Upload button at the TOP
+        redirects to /<user>/upload
+
+`/<user>/view/<image-id>`
+    display a single image with that id at default size - medium
+
+`/<user>/view/<image-id>/[s-m-l-o]`
+    display the image with image id at the specified size [small, medium, large, original]
+
+---
+
+[OPTIONAL]
+## Deleting the image
+
+`/<user>/delete/image-id`
+
+    deletes the image if present 
+
+
+<!-- ## Downloading an image
 
 `/get/image-id/`
     
@@ -32,13 +71,8 @@ return a response image has uploaded ?
 
 `/get/image-id/[s/m/l/o]/`
     
-    Small, Medium, Large and Original
+    Small, Medium, Large and Original -->
 
-## Viewing the images
-
-`/web/list/n/`
-
-    diplay last n images uploaded with thumbnails
 
 
 ## Storing the images
@@ -49,7 +83,11 @@ return a response image has uploaded ?
 `flask.save('/path/to/save')`
 save files in the server directly
 
-store image locally using sql lite -- probably not needed ?
+## METADATA
+
+email, password, user_name = email id until @ symbol
+
+
 
 ## Cloud
 
@@ -57,16 +95,11 @@ Store the image in s3 bucket and fetch the image from there.
 
 ## Flow
 
+*change*
+
 /upload/ + image  --> store_db --> return OK Response
 
 /get/image-id  -- fetch_image --> return image
-
-
-*not needed*
-*click or argparse*
-    
-    probably stick with argparse
-    flask uses click
 
 Sample link
 

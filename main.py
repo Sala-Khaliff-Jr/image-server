@@ -16,6 +16,7 @@ def upload_success():
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
+    allowed_extensions 
     uploaded_file = request.files['uploaded_file']
     print(uploaded_file.__dict__)
     if uploaded_file.filename != '':
