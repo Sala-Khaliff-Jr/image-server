@@ -8,7 +8,7 @@
 
 *METADATA FILE TO STORE USERNAME AND IMAGE UPLOADED*
 
-*USER AUTHNTICATION --?*
+*USER AUTHNTICATION*
 
 *BETTER HTML DESIGN*
 
@@ -55,33 +55,16 @@
 
 ---
 
-[OPTIONAL]
-## Deleting the image
-
-`/<user>/delete/image-id`
-
-    deletes the image if present 
-
-
-<!-- ## Downloading an image
-
-`/get/image-id/`
-    
-    to get the default size - medium
-
-`/get/image-id/[s/m/l/o]/`
-    
-    Small, Medium, Large and Original -->
-
-
-
 ## Storing the images
 
-## Locally 
-[Uploading Files](https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/#uploading-files)
+Local Storage
 
-`flask.save('/path/to/save')`
-save files in the server directly
+    store file in dedicated directory for each user
+        /images/user/
+
+Cloud Storage
+
+    ## TODO: Plan how to store and retrieve in cloud
 
 ## METADATA
 
@@ -89,17 +72,15 @@ email, password, user_name = email id until @ symbol
 
 
 
-## Cloud
+---
 
-Store the image in s3 bucket and fetch the image from there.
+[OPTIONAL]
+## Deleting the image
 
-## Flow
+`/<user>/delete/image-id`
 
-*change*
+    deletes the image if present 
 
-/upload/ + image  --> store_db --> return OK Response
-
-/get/image-id  -- fetch_image --> return image
 
 Sample link
 
