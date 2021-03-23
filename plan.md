@@ -48,9 +48,11 @@
         redirects to /<user>/upload
 
 `/<user>/view/<image-id>`
+
     display a single image with that id at default size - medium
 
 `/<user>/view/<image-id>/[s-m-l-o]`
+
     display the image with image id at the specified size [small, medium, large, original]
 
 ---
