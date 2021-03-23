@@ -14,26 +14,22 @@ def index():
 def upload_success():
     return render_template('upload_success.html')
 
+@app.route('/error')
+def error():
+    return render_template('Cannot perform the action')
+
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
-    allowed_extensions 
+    user = 'sala'
+    allowed_extensions = []
     uploaded_file = request.files['uploaded_file']
-    print(uploaded_file.__dict__)
     if uploaded_file.filename != '':
-        uploaded_file.save(
-            os.path.join('images/', secure_filename(uploaded_file.filename))
-        )
+        if not os.path.exists(f'images/{user}'):
+            redirect(url_for('error'))
+            # create folder when creating user
+        else:
+            uploaded_file.save(
+                os.path.join(f'images/{user}', secure_filename(uploaded_file.filename))
+            )
     return redirect(url_for('upload_success'))
-
-
-# uploaded_file
-#     {'name': 'uploaded_file',
-#      'stream': <tempfile.SpooledTemporaryFile object at 0x7fd292af8e80>, 
-#     filename': 'ai_5_logo_alone.png', 
-#         'headers': Headers(
-#             [('Content-Disposition', 
-#             'form-data; name="uploaded_file";  filename="ai_5_logo_alone.png"'), 
-#             ('Content-Type', 'image/png')]
-#         )
-#     }
-

@@ -83,6 +83,11 @@ email, password, user_name = email id until @ symbol
 
     deletes the image if present 
 
+## Log out option
+
+`/logout`
+
+    to log the user out of the session
 
 Sample link
 

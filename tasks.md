@@ -22,3 +22,4 @@ Abusing Amazon images: http://aaugh.com/imageabuse.html
 
 
 Python Imaging Library: https://python-pillow.org/
+
