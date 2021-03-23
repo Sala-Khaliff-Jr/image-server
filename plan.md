@@ -12,8 +12,6 @@
 
 *BETTER HTML DESIGN*
 
-
-
 ## Uploading an image
 
 `/post/image`
@@ -89,9 +87,14 @@ https://pythonhosted.org/Flask-Uploads/
 [Handling file uploads with flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask)
 
 
+## NOTES
+
 svinx package for documentation 
+
 minio - s3 interface
+
 environment variable for image path
+
 store images in s3
 
 metadata file to assign username to the image uploaded
