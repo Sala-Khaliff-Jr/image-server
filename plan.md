@@ -5,9 +5,13 @@
 
 ## *TODO*: 
 
+*COMPLETE THE FUNCTIONALITY FIRST*
+
 *METADATA FILE TO STORE USERNAME AND IMAGE UPLOADED*
 
 *Error Handling - 404*
+
+*CLI UPLOAD FEATURE*
 
 ## Main Pages
 
@@ -24,6 +28,10 @@
 
     Allows users to create new user
 
+`/profile`
+
+    Display the account information
+        recent 
 --- 
 
 ## Uploading an image
