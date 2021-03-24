@@ -4,13 +4,10 @@
 *similar to google drive*
 
 ## *TODO*: 
-*ADD USER UPLOADS*
 
 *METADATA FILE TO STORE USERNAME AND IMAGE UPLOADED*
 
-*USER AUTHNTICATION*
-
-*BETTER HTML DESIGN*
+*Error Handling - 404*
 
 ## Main Pages
 
